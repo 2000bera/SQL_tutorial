@@ -1,0 +1,159 @@
+College Student Data Analysis, it is a small project using MySQL
+
+-- creating database
+CREATE DATABASE college;
+
+-- using college database
+USE college;
+
+-- creating students table
+CREATE TABLE students (
+	studentID INT PRIMARY KEY UNIQUE,
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    gender VARCHAR(1),
+    studentNumber VARCHAR(8) UNIQUE,
+    courseID INT,
+    addressID INT,
+    CHECK (gender in ('M', 'F', 'O')) -- adding check for a gender
+); 
+
+-- inserting data into students table
+INSERT INTO students
+VALUES(1011, 'Yanda', 'Wanda', 'F', '37778412', '301', '10'),
+	  (1012, 'Layla', 'Yola', 'M', '38093223', '301', '11'),
+      (1013, 'Ayanda', 'Bera', 'F', '32624859', '302', '12'),
+      (1014, 'Mandla', 'Woods', 'O', '31022145', '304', '13'),
+      (1015, 'Sayanda', 'Dlamini', 'F', '38961452', '303', '12'),
+      (1016, 'Luyolo', 'Roods', 'M', '38364125', '306', '11'),
+      (1017, 'Mike', 'Brown', 'O', '39327854', '307', '13'),
+      (1018, 'Wandile', 'Thobela', 'M', '37215002', '303', '14'),
+      (1019, 'Layola', 'Bera', 'F', '41202321', '307', '15'),
+      (1020, 'Kevin', 'Smith', 'M', '42156235', '302', '16');
+      
+-- showing all data into students table
+SELECT *
+FROM students;
+
+-- creating course table
+CREATE TABLE course (
+	courseID INT PRIMARY KEY UNIQUE,
+    faculty VARCHAR(50),
+    courseName VARCHAR(50)
+);
+
+-- inserting data into course table
+INSERT INTO course 
+VALUES (301, 'Science', 'Bachelor of Science in Computer Science'),
+	   (302, 'Health Science', 'Bachelor of Nursing'),
+       (303, 'Engineering', 'Bachelor of Engineering in Electronics'),
+       (304, 'Business and Economics', 'Bachelor of Commerce'),
+       (305, 'Humanities', 'Bachelor of Philosophy'),
+       (306, 'Art', 'Bachelor of Arts'),
+       (307, 'Law', 'Bachelor of Law'),
+       (308, 'Design and Architecture', 'Diploma in Architectural Design'),
+       (309, 'Education', 'Bachelor of Education')
+;
+
+-- adding foreign key to the student table
+ALTER TABLE students
+ADD CONSTRAINT fk_student_course
+FOREIGN KEY (courseID)
+REFERENCES course(courseID);
+
+-- showing all data into course table
+SELECT * 
+FROM course;
+
+-- creating address table
+CREATE TABLE address (
+	addressID INT PRIMARY KEY UNIQUE,
+    houseNumber INT,
+    streetNumber VARCHAR(50),
+    streetName VARCHAR(50)
+);
+
+-- inserting data into address table
+INSERT INTO address
+VALUES (10, 210, 'Unit 2 Cul 7', 'Steve Biko'),
+	   (11, 377, 'Unit 2 Cul 8', 'Steve Biko'),
+       (12, 301, 'Unit 5', 'Univeristy Avenue'),
+       (13, 100, 'Unit 10', 'Franck St'),
+       (14, 409, 'Unit 14', 'James St'),
+       (15, 250, 'Unit 2 Cul 10', 'Luno St'),
+       (16, 488, 'Unit 8', 'House St'),
+       (17, 312, 'Unit 9', 'View Point'),
+       (18, 997, 'Unit 12', 'Hart St'),
+       (19, 234, 'Golf View', 'Mike St')
+;
+
+-- adding foreign key to the student table
+ALTER TABLE students
+ADD CONSTRAINT
+FOREIGN KEY (addressID)
+REFERENCES address(addressID);
+
+-- showing all data into address table
+SELECT * 
+FROM address; 
+
+-- 1. How many students?
+SELECT COUNT(*) as Number_of_students
+FROM students;
+
+-- 2. How many male students?
+SELECT *
+FROM students
+WHERE gender = 'M';
+
+-- 3. How many female students?
+SELECT *
+FROM students
+WHERE gender = 'F';
+
+-- 4. How many other students?
+SELECT *
+FROM students
+WHERE gender = 'O';
+
+-- 5. How many students doing Science and where do they stay?
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Science';
+
+-- 6. How many students doing Art and where do they stay?
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Art';
+
+-- 7. How many students doing Business and Economics, and where do they stay?
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Business and Economics';
+
+-- 8. How many students doing Engineering and where do they stay?
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Engineering';
+
+-- 9. How many students doing Law and where do they stay?
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Law';
+
+-- 10. How many students doing Health Science and where do they stay? 
+SELECT s.studentNumber, c.faculty, c.courseName, a.streetName
+FROM course c
+JOIN students s on c.courseID = s.courseID
+JOIN address a on s.addressID = a.addressID
+WHERE faculty = 'Health Science';
