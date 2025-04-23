@@ -1,2 +1,2 @@
 # SQL_tutorial
-To manipulate data and cleaning data in SQL using these software (MySQL, PostgreSQL)
+To Retrieval, Manipulation, and Analysis in SQL using these software (MySQL, PostgreSQL)
