@@ -14,7 +14,7 @@
 
 - pgAdmin or MySQL Workbench (GUI clients)
 
-# <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/966a6147-7a26-4580-96ee-879e5c340453" /> Database Schema
+# <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/9db1e36e-cdfc-434d-9716-3ed124eb3461" /> Database Schema
 - Tables (Entities): Names of tables and what each represents
 
 - Columns (Attributes/Fields): The specific data each table stores (e.g., customer_id, name, email).
