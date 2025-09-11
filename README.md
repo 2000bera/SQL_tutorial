@@ -12,7 +12,7 @@
 
 - PostgreSQL (Postgres)
 
-- pgAdmin or MySQL Workbench (GUI clients)
+- pgAdmin 4 or MySQL Workbench (GUI clients)
 
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/9db1e36e-cdfc-434d-9716-3ed124eb3461" /> Database Schema
 - Tables (Entities): Names of tables and what each represents
