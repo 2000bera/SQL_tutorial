@@ -21,13 +21,11 @@
 
 - Includes data types (e.g., INT, VARCHAR, DATE): Defines whether fields can be NULL or NOT NULL.
 
--Keys
+- Primary Key (PK): unique identifier for each record.
 
-Primary Key (PK): unique identifier for each record.
+- Foreign Key (FK): links between tables, enforcing relationships.
 
-Foreign Key (FK): links between tables, enforcing relationships.
-
-Unique constraints: ensures no duplicate values in a column (like email).
+- Unique constraints: ensures no duplicate values in a column
 
 - Relationships: How tables connect (one-to-many, many-to-many).
 
