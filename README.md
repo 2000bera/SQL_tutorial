@@ -8,22 +8,30 @@
 
   
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/26780cf3-4554-4e0a-9701-d7c2fe060223" /> Tools Use:
-- Cisco Packet Tracer
+- MySQL Community Server
 
-# <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/b8ade456-86cf-4400-b7c8-43374ec00611" /> Network Topologies
+- PostgreSQL (Postgres)
 
-- Star Topology
-<img width="635" height="599" alt="Star" src="https://github.com/user-attachments/assets/75ceb62b-6d5d-4d60-9f3a-043e9abd0c20" />
+- pgAdmin or MySQL Workbench (GUI clients)
 
-- Bus Topology
+# <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/b8ade456-86cf-4400-b7c8-43374ec00611" /> Database Schema
+- Tables (Entities): Names of tables and what each represents
 
-- Mesh Topology
+- Columns (Attributes/Fields): The specific data each table stores (e.g., customer_id, name, email).
 
-- Ring Topology
+- Includes data types (e.g., INT, VARCHAR, DATE): Defines whether fields can be NULL or NOT NULL.
 
-- Extended Star Topology
+-Keys
 
-- Hybrid Topology
+Primary Key (PK): unique identifier for each record.
+
+Foreign Key (FK): links between tables, enforcing relationships.
+
+Unique constraints: ensures no duplicate values in a column (like email).
+
+- Relationships: How tables connect (one-to-many, many-to-many).
+
+- Constraints: Rules for data integrity (CHECK, DEFAULT, NOT NULL).
 
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/8f149832-d9f8-428b-82c2-bc6de41a6597" /> Summary:
 
