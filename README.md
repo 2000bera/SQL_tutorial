@@ -4,7 +4,7 @@
 - SQL Tutorial — Retrieval, Manipulation, and Analysis (MySQL & PostgreSQL)
 
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/63687b28-62e0-4a18-b9a7-02efc50dceb5" /> Description:
-- This project is a hands-on tutorial and mini-project that teaches how to retrieve, manipulate, and analyze data using SQL. It focuses on practical skills with two popular relational database systems: MySQL and PostgreSQL. The tutorial includes real-world task: reporting, aggregation, cleaning, joins, window functions, and indexing.
+- This project is a hands-on tutorial and mini-project that teaches how to retrieve, manipulate, and analyze data using SQL. It focuses on practical skills with two popular relational database systems: MySQL and PostgreSQL. The tutorial includes real-world task: reporting, aggregation, cleaning, and joins.
 
   
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/26780cf3-4554-4e0a-9701-d7c2fe060223" /> Tools Use:
