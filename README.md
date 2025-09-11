@@ -25,12 +25,6 @@
 
 - Foreign Key (FK): links between tables, enforcing relationships.
 
-- Unique constraints: ensures no duplicate values in a column
-
-- Relationships: How tables connect (one-to-many, many-to-many).
-
-- Constraints: Rules for data integrity (CHECK, DEFAULT, NOT NULL).
-
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/993d7e4b-b8fd-4d2c-93ba-01bea864d133" /> Visualization:
 
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/f2821bd8-bb52-4edc-919c-0bf6fa2e7233" /> Learnings:
@@ -44,11 +38,13 @@
 
 - Work with window functions (ROW_NUMBER(), RANK(), SUM() OVER(...)).
 
-- Perform data updates, deletes, and safe upserts (INSERT ... ON CONFLICT / INSERT ... ON DUPLICATE KEY UPDATE).
+- Perform data updates, and deletes.
 
-- Create indexes and understand query plans (EXPLAIN).
+- Create indexes and understand query plans
 
 - Export query results.
 
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/db740343-76e3-425d-9991-d39f704abfdc" /> Challenges:
+- Performing window functions.
+- Performing indexes.
 
