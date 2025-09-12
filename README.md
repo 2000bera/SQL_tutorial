@@ -47,4 +47,5 @@
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/db740343-76e3-425d-9991-d39f704abfdc" /> Challenges:
 - Performing window functions.
 - Performing indexes.
+- Data cleaning.
 
