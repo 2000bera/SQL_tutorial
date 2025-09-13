@@ -34,7 +34,7 @@
 
 - Write SELECT queries with filtering, sorting, and joins.
 
-- Use aggregate functions (SUM, AVG, COUNT, GROUP BY, HAVING).
+- Use aggregate functions (SUM, AVG, COUNT, GROUP BY).
 
 - Work with window functions (ROW_NUMBER(), RANK(), SUM() OVER(...)).
 
