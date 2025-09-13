@@ -48,4 +48,5 @@
 - Performing window functions.
 - Performing indexes.
 - Data cleaning.
+- Finding patterns
 
