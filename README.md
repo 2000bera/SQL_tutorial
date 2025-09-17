@@ -25,8 +25,6 @@
 
 - Foreign Key (FK): links between tables, enforcing relationships.
 
-# <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/993d7e4b-b8fd-4d2c-93ba-01bea864d133" /> Visualization:
-
 # <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/f2821bd8-bb52-4edc-919c-0bf6fa2e7233" /> Learnings:
 - Create databases and tables in MySQL and PostgreSQL.
 
